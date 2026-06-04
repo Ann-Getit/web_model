@@ -1,0 +1,87 @@
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+display: grid;
+}
+.co {
+/* dit blijft zo staan !*/
+}
+
+.whole {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  transform: translateY(50px);
+}
+@media (max-width: 768px) {
+  .whole {
+    flex-direction: column;
+    align-items: center;
+transform: translateY(135px);
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    min-height: 900px;
+    padding-bottom: 10px;
+  }}
+
+  @media (max-width: 768px) {
+    #copyright {
+       transform: translateY(125px);
+
+    }
+    }
+  
+.tijdenbox {
+  display: grid;
+ /*transform: translateX(10rem);*/
+
+  margin-bottom: 20px;
+}
+
+
+.deeleen {
+  display: grid;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(188, 158, 210, 0.664);
+    margin-top: 30px;
+}
+
+
+.opening-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* desk en mobile zijn*/
+  max-width: 300px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+}
+
+
+
+
+
+#bottom {
+  text-align: center;
+  font-size: 18px;
+
+}
+#copyright {
+  display: grid;
+  height: 3vw;
+  width: 100%; /* wel of geen width ?*/
+  height: 50px;
+  margin-top: 50px;
+
+}

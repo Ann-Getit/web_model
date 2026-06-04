@@ -1,0 +1,187 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 0.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background: linear-gradient(
+    -45deg,
+    rgb(246, 242, 244),
+    rgb(210, 210, 213),
+    rgb(220, 215, 215),
+    #f397e1e3,
+    rgb(236, 169, 177)
+    );
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;   
+  background-attachment: fixed;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+body {
+  margin: 0; 
+  min-height: 100vh;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0; 
+  min-height: 100vh;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+.nav-container {
+  /*margin: 2rem auto 2rem auto; */
+  display: flex;
+  justify-content: space-around; /* logo links, burger/menu rechts */
+  align-items: center;
+  background-color: rgba(69, 40, 40, 0.25);
+  padding: 0 1rem;
+  height: 85px;
+  width: 70%;
+  border-radius: 50px;
+  position: sticky;
+  top: 1rem;
+  z-index: 1005;
+  overflow: visible;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* Safari */
+}
+
+.logo {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.793);
+}
+
+
+/* grote scherm*/
+.nav-links.desktop {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+/*ook grote scherm*/
+.nav-links.mobile {
+  display: none; /**flex to none*/
+  position: fixed;
+  top: 0; /*---it was top: 85px;------*/
+  right: 0;
+  height: 100vh;
+  width: 70vw;
+  background: rgba(0,0,0,0.9);
+  flex-direction: column;
+  padding-top: 5rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+  
+/* het was margin 1rem auto;*/}
+
+
+/* ----de <li>------*/
+.nav-links.desktop li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /*font-size: 30px;*/
+}
+
+.nav-links.desktop li a:hover {
+  color: rgba(255, 255, 255, 0.582);
+}
+
+/* 
+
+*/
+
+
+.hamburger {
+  display: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: solid 1px white;
+  padding: 0.3rem 0.3rem 0.9rem 0.3rem;
+  border-radius: 10px;
+
+}
+                                                                                                                    
+
+
+
+/* Responsief: kleine schermen */
+@media (max-width: 968px) {
+
+  /* Desktop menu verbergen */
+  .nav-links.desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links.mobile {
+    display: flex;
+    /*flex-direction: column;*/ 
+    position: fixed;
+    top: 85px;  /* onder de nav-container */
+    right: 0;
+    height: calc(100vh - 85px);
+    background: rgba(0,0,0,0.855);
+    transform: translateX(150%);
+    transition: transform 0.3s ease; /* even de nav-links.mobile testen tijdens klikken ervan */
+    padding-top: 3rem;
+    margin: 0;
+    gap: 2rem;
+    z-index: 1001;
+    list-style: none;
+    
+
+    
+  }
+
+  .nav-links.mobile.open {
+    transform: translateX(50%);
+  }
+
+
+  /*  alle links voor mobile overlay behalve Work(aparte hover)*/
+  .nav-links.mobile li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  /*  alle links voor mobile overlay behalve Work(aparte hover)*/
+  .nav-links.mobile li a:hover {
+    color: rgba(255, 255, 255, 0.582);
+  }
+
+
+  .overlay {
+    position: fixed;
+    top: 85px;
+    padding: 0;
+    width: 100vw;
+    height: calc(100vh - 85px);
+    background: rgba(0, 0, 0, 0.667);
+    z-index: 1000;
+    transform: translateX(0);
+  }  
+}

@@ -1,0 +1,95 @@
+.head2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    font-size: 40px;
+
+}
+
+
+.cont1 {
+    display: grid;
+    height: 1950px;
+    border-left: 1px solid rgb(181, 139, 221);
+    margin: 100px 50px 40px 50px;
+    border-right: 1px solid rgb(181, 139, 221);
+    
+}
+
+
+
+.event-image {
+  display: grid;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 40%;
+  transform: translateY(-50px);
+  z-index: 2;
+}
+.box1 {
+    display: grid;
+    background-color: rgb(207, 181, 232);
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    line-height: 1.0;
+    padding-left: 15px;
+}
+
+
+
+
+
+.event-image2 {
+  display: grid;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 40%;
+  transform: translateY(-50px);
+  z-index: 2;
+}
+.box2 {
+  display: grid;
+  justify-self: end;
+  background-color:  rgb(207, 181, 232);
+  width: 50%;
+  z-index: 1;
+  position: relative;
+  line-height: 1.0;
+  padding-left: 15px;
+
+    /*;*/
+}
+.derde {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.event-image3 {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-left: 40%;
+  z-index: 2;
+ transform: translateY(-50px);
+}
+.box3 {
+    display: grid;
+    background-color: rgb(207, 181, 232);
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+    line-height: 1.0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+
+        function initialize()
+        { //api kan je alleen terug halen met JSON. $.getJSON
+            //ipa voor elke vak. achteraan moet de 'show{naam van function' invoeren
+         $.getJSON('https://xanderwemmers.nl/api/restaurant/starters', showStarters);
+         $.getJSON('https://xanderwemmers.nl/api/restaurant/mains', showMains);
+         $.getJSON('https://xanderwemmers.nl/api/restaurant/desserts', showDesserts);
+         $.getJSON('https://xanderwemmers.nl/api/restaurant/drinks', showDrinks);
+        }
+
+        //todo: desserts en drinks
+
+        function showStarters(data) //hier zet je de id naam aan en activeer je de show{functie/id naam} 
+        // wat in de () zit is net als variabel
+        {
+            showItems(data, 'starters');//hier plaats je de ipa/data in de showItems {showItems waar je uiteindelijk specifieke data uitgaat halen} 
+        }
+
+        function showMains(data) 
+        {
+            showItems(data, 'mains');
+        }
+
+        function showDesserts(data)
+        {
+            showItems(data, 'desserts');
+        }
+
+         function showDrinks(data)
+        {
+            showItems(data, 'drinks');
+        }
+
+        function showItems(data, id) 
+        {
+
+            var html = ''; //blanco omdat de value veranderd
+
+            for (var item of data)//voor {loop var item} is en specifieke item en data is alle items die er zijn. wel handig een voor loop voor als je uit meerdere datas telkens 1 item eruit wil halen. 
+        {
+            html += `<div class="description">${item.Description}</div>`;
+            html += `<div class="extra">${item.Extra}</div>`; // als je de teksten wilt stylen moet je dit doen.
+            html += `<div class="price">&euro; ${item.Price.toFixed(2)}</div>`;
+           //tml += `<div class="page">&euro${item.Page}</div>`;
+
+        }
+        document.getElementById(id).innerHTML = html;
+
+        }
+
+
+
+
+    </script>
+
+    <style>
+        body {
+            background-color: gainsboro;
+            text-align: center;
+            width: 100%;
+             background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/old_wall.png");
+        }
+
+
+        h1 {
+            width: 100%;
+            font-family: "Dancing Script";
+        } 
+
+        h3 {
+            background-color: rgb(135, 206, 250);
+            color: white;
+            font-weight: bold;
+            font-family: "roboto";
+            padding: 20px;
+
+        }
+
+        #content {
+            width: 50%;
+            margin: auto;
+            background-color: rgb(41, 70, 88);
+            border: 10px outset rgb(135, 206, 250);
+            padding: 0 150px;
+            color: white;
+
+        }
+
+        .description {
+            font-weight: bold;
+            /*font-family: "papyrus";*/
+            font-family: 'Impallari Type';
+        }
+
+        .extra {
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-style: italic
+        }
+
+        .price {
+            margin: 5px;
+        }
+
+        h2 {
+            background-color: black;
+            width: 20%;
+            color: white;
+            margin: auto;
+        }
+
+        .page {
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 100px;
+        }
+
+        #container {
+            display: inline;
+        }
+
+        #contact, #address, #openhours {
+            margin: 50px;
+            font-weight: bold;
+        }
+
+         p {
+            font-weight: normal;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body onload="initialize()">
+
+    <h1>Het hart van Amsterdam</h1>
+    <h2>Menu</h2>
+
+    <div id="content"> 
+    <h3>Voorgerechten</h3>
+
+    <div id="starters">Downloading...</div>
+
+    <h3>Hoofdgerechten</h3>
+
+    <div id="mains">Downloading...</div>
+
+    <h3>Desserts</h3>
+
+    <div id="desserts">Downloading...</div>
+
+    <h3>Dranken</h3>
+
+    <div id="drinks">Downloading...</div>
+    </div>
+
+
+    <footer>
+        <div id="container">
+            <div id="contact">CONTACT US
+                <p>Phone: +31609876543</p>
+                <p>Mail: reservation@projectTraining.com</p>
+            </div>
+            <div id="address">ADDRESS
+                <p>Addressstraat 1</p>
+                <p>2025NL Github</p>
+            </div>
+            <div id="openhours">OPENING HOURS
+            <p>MON - FRI: From 17:00 to 00:00</p>
+            <p>Kitchen closes at: 22:30</p>
+            <p>SAT - SUN From: 13:00 To 00:00</p>
+            <p>Kitchen closes at: 23:00</p>
+            </div>
+        </div>
+
+    </footer>
+
+    
+
+
+
+</body>
+</html>
