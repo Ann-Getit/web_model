@@ -6,7 +6,7 @@ import "./Nav.css";
 const Nav = () => {
 
 const [open, setOpen] = useState(false);
-const [setWorkOpen] = useState(false);
+const [, setWorkOpen] = useState(false);
 const navRef = useRef(null);
 
 
