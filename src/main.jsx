@@ -7,7 +7,7 @@ import ScrollManager from './ScrollManager.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/web_model">
     <ScrollManager />
     
     <App />
