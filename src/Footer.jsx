@@ -15,7 +15,7 @@ const Footer = () => {
              <h2>Contact</h2>
             <div className="opening-hours">
                 <div className="row">
-                <spn>Email:</spn>
+                <span>Email:</span>
                 <span>soukrestaurant@example.com</span>
                 </div>
                 <div className="row">
