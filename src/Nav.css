@@ -82,24 +82,10 @@ html {
 }
 /*ook grote scherm*/
 .nav-links.mobile {
-  position: fixed;
-  top: var(--nav-height); /* start net onder navbar */
-  right: 0;
-   height: calc(100vh - var(--nav-height)); /* rest van scherm */
-  width: 70%;
-  background: rgba(0,0,0,0.9);
-  display: flex;
-  flex-direction: column;
+  display: none;
+  }
+
  
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 9999;
-  }
-
- .nav-links.mobile.open {
-    transform: translateX(30%);
-
-  }
 /* ----de <li>------*/
 .nav-links.desktop li a {
   color: white;
@@ -145,19 +131,26 @@ html {
 
   .nav-links.mobile { 
     display: flex;
-    top: 85px;  /* onder de nav-container */
+    position: fixed;
+    top: var(--nav-height); /* start net onder navbar */
     right: 0;
+    width: 70%;
+    height: calc(100vh - var(--nav-height)); /* rest van scherm */
     background: rgba(0,0,0,0.855);
-    transform: translateX(150%);
+    flex-direction: column;
+    transform: translateX(100%);
     transition: transform 0.3s ease; /* even de nav-links.mobile testen tijdens klikken ervan */
     padding-top: 3rem;
     margin: 0;
     gap: 2rem;
-    z-index: 1001;
+    z-index: 9999;
     list-style: none;
   }
 
+  .nav-links.mobile.open {
+    transform: translateX(30%);
 
+  }
 
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a {
