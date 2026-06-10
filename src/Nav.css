@@ -82,7 +82,7 @@ html {
   top: 0; /*---it was top: 85px;------*/
   right: 0;
   height: 100vh;
-  width: 70vw;
+ width: 100%;
   background: rgba(0,0,0,0.9);
   flex-direction: column;
   padding-top: 5rem;
@@ -151,13 +151,10 @@ html {
     gap: 2rem;
     z-index: 1001;
     list-style: none;
-    
-
-    
   }
 
   .nav-links.mobile.open {
-    transform: translateX(50%);
+    transform: translateX(40%);
   }
 
 
@@ -167,6 +164,8 @@ html {
     font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
   }
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a:hover {
@@ -178,7 +177,7 @@ html {
     position: fixed;
     top: 85px;
     padding: 0;
-    width: 100%;
+    width:100%;
    /* inset: 0;  CAN BE ADDED FOR STYLING -----*/
     background: rgba(0, 0, 0, 0.667);
     z-index: 1000;

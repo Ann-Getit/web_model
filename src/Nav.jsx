@@ -59,12 +59,9 @@ return (
         
         <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
       </ul>
-
-
-
-      {/* overlay achtergrond bij mobiel */}
-       {open && <div className="overlay" onClick={() => setOpen(false)} />}
-
+      {/*.   {/* overlay achtergrond bij mobiel */}
+      {/* {open && <div className="overlay" onClick={() => setOpen(false)} />}
+ */}
 
       </nav>
 
