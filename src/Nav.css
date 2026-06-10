@@ -1,6 +1,7 @@
 
 
 :root {
+    --nav-height: 85px; /* hoogte van navbar */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 0.5;
   font-weight: 400;
@@ -81,13 +82,13 @@ html {
 }
 /*ook grote scherm*/
 .nav-links.mobile {
-  top: 0;
   position: fixed;
+  top: var(--nav-height); /* start net onder navbar */
   right: 0;
-  height: 100vh;
+   height: calc(100vh - var(--nav-height)); /* rest van scherm */
   width: 70%;
   background: rgba(0,0,0,0.9);
-  display: none;
+  display: flex;
   flex-direction: column;
  
   transform: translateX(100%);
