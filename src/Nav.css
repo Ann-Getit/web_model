@@ -1,7 +1,7 @@
 
 
 :root {
-    --nav-height: 85px; /* hoogte van navbar */
+    /*--nav-height: 85px;  hoogte van navbar */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 0.5;
   font-weight: 400;
@@ -132,19 +132,18 @@ html {
   .nav-links.mobile { 
     display: flex;
     position: fixed;
-    top: var(--nav-height); /* start net onder navbar */
+   
     right: 0;
     width: 70%;
-    height: calc(100vh - var(--nav-height)); /* rest van scherm */
     background: rgba(0,0,0,0.855);
     flex-direction: column;
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: transform 0.3s ease; /* even de nav-links.mobile testen tijdens klikken ervan */
-    padding-top: 3rem;
     margin: 0;
     gap: 2rem;
     z-index: 9999;
     list-style: none;
+    padding-top: 20px;
   }
 
   .nav-links.mobile.open {
@@ -169,12 +168,12 @@ html {
 
   .overlay {
     position: fixed;
-    top: 0px;
+    top: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
    /* inset: 0;  CAN BE ADDED FOR STYLING -----*/
     background: rgba(0, 0, 0, 0.667);
     z-index: 1000;
-    transform: translateX(0);
   }  
 }
