@@ -83,7 +83,6 @@ html {
 .nav-links.mobile {
   top: 0;
   position: fixed;
-  top: 85px; 
   right: 0;
   height: 100vh;
   width: 70%;
