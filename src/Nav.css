@@ -1,9 +1,7 @@
-* {
-  box-sizing: border-box;
-}
 
 
 :root {
+   --nav-height: 80px; /* dit toegevoegd*/
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 0.5;
   font-weight: 400;
@@ -84,12 +82,13 @@ html {
 }
 /*ook grote scherm*/
 .nav-links.mobile {
+  top: var(--nav-height);/* dit toegevoegd*/
   display: none; /**flex to none*/
   position: fixed;
   top: 0; /*---it was top: 85px;------*/
   right: 0;
   height: 100vh;
- width: 100%;
+  width: 100%;
   background: rgba(0,0,0,0.9);
   flex-direction: column;
   padding-top: 5rem;
@@ -145,11 +144,10 @@ html {
 
   .nav-links.mobile {
     display: flex;
-    /*flex-direction: column;*/ 
+    
     position: fixed;
     top: 85px;  /* onder de nav-container */
     right: 0;
-
     background: rgba(0,0,0,0.855);
     transform: translateX(150%);
     transition: transform 0.3s ease; /* even de nav-links.mobile testen tijdens klikken ervan */
