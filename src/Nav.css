@@ -1,4 +1,7 @@
+
+
 :root {
+    /*--nav-height: 85px;  hoogte van navbar */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 0.5;
   font-weight: 400;
@@ -25,6 +28,7 @@ a {
 
 body {
   margin: 0; 
+  padding: 0;
   min-height: 100vh;
   color: white;
   scroll-behavior: smooth;
@@ -36,6 +40,7 @@ html {
   min-height: 100vh;
   color: white;
   scroll-behavior: smooth;
+  padding: 0;
 }
 
 
@@ -78,22 +83,10 @@ html {
 }
 /*ook grote scherm*/
 .nav-links.mobile {
-  display: none; /**flex to none*/
-  position: fixed;
-  top: 0; /*---it was top: 85px;------*/
-  right: 0;
-  height: 100vh;
-  width: 70vw;
-  background: rgba(0,0,0,0.9);
-  flex-direction: column;
-  padding-top: 5rem;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 9999;
-  
-/* het was margin 1rem auto;*/}
+  display: none;
+  }
 
-
+ 
 /* ----de <li>------*/
 .nav-links.desktop li a {
   color: white;
@@ -137,30 +130,27 @@ html {
     display: block;
   }
 
-  .nav-links.mobile {
+  .nav-links.mobile { 
     display: flex;
-    /*flex-direction: column;*/ 
     position: fixed;
-    top: 85px;  /* onder de nav-container */
+   
     right: 0;
-
+    width: 70%;
     background: rgba(0,0,0,0.855);
+    flex-direction: column;
     transform: translateX(150%);
     transition: transform 0.3s ease; /* even de nav-links.mobile testen tijdens klikken ervan */
-    padding-top: 3rem;
     margin: 0;
     gap: 2rem;
-    z-index: 1001;
+    z-index: 9999;
     list-style: none;
-    
-
-    
+    padding-top: 20px;
   }
 
   .nav-links.mobile.open {
-    transform: translateX(50%);
-  }
+    transform: translateX(30%);
 
+  }
 
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a {
@@ -168,6 +158,8 @@ html {
     font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
   }
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a:hover {
@@ -177,12 +169,12 @@ html {
 
   .overlay {
     position: fixed;
-    top: 85px;
+    top: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
    /* inset: 0;  CAN BE ADDED FOR STYLING -----*/
     background: rgba(0, 0, 0, 0.667);
     z-index: 1000;
-    transform: translateX(0);
   }  
 }
