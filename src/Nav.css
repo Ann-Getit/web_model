@@ -1,7 +1,6 @@
 
 
 :root {
-   --nav-height: 80px; /* dit toegevoegd*/
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 0.5;
   font-weight: 400;
@@ -82,23 +81,26 @@ html {
 }
 /*ook grote scherm*/
 .nav-links.mobile {
-  top: var(--nav-height);/* dit toegevoegd*/
-  display: none; /**flex to none*/
+  top: 0;
+
   position: fixed;
-  top: 0; /*---it was top: 85px;------*/
+  top: 85px; 
   right: 0;
   height: 100vh;
-  width: 100%;
+  width: 70%;
   background: rgba(0,0,0,0.9);
+  display: none;
   flex-direction: column;
-  padding-top: 5rem;
+ 
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 9999;
-  
-/* het was margin 1rem auto;*/}
+  }
 
+ .nav-links.mobile.open {
+    transform: translateX(30%);
 
+  }
 /* ----de <li>------*/
 .nav-links.desktop li a {
   color: white;
@@ -142,10 +144,8 @@ html {
     display: block;
   }
 
-  .nav-links.mobile {
+  .nav-links.mobile { 
     display: flex;
-    
-    position: fixed;
     top: 85px;  /* onder de nav-container */
     right: 0;
     background: rgba(0,0,0,0.855);
@@ -158,9 +158,6 @@ html {
     list-style: none;
   }
 
-  .nav-links.mobile.open {
-    transform: translateX(40%);
-  }
 
 
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
