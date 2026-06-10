@@ -182,9 +182,9 @@ html {
 
   .overlay {
     position: fixed;
-    top: 85px;
+    top: 0px;
     padding: 0;
-    width:100%;
+    width: 100%;
    /* inset: 0;  CAN BE ADDED FOR STYLING -----*/
     background: rgba(0, 0, 0, 0.667);
     z-index: 1000;
