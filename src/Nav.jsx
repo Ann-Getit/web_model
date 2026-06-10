@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import "./Nav.css";
 
 const Nav = () => {
@@ -28,17 +27,17 @@ return (
 
      <nav ref={navRef} className="nav-container">
 
-        <div className="logo">A.developer</div>
+        <div className="logo">Souk</div>
 
 
         {/* Desktop links */}
       <ul className="nav-links desktop">
 
-          <li><Link to="./home" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Home</Link></li> {/** inplaats van anchor href toch wel link to gebruiken zodat ik niet vast blijft in "project page" */}
+          <li><Link to="/home" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Home</Link></li> {/** inplaats van anchor href toch wel link to gebruiken zodat ik niet vast blijft in "project page" */}
 
-          <li><Link to="./Menukaart" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Menu</Link></li> {/** hover voor de nav links */}
+          <li><Link to="/menukaart" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Menu</Link></li> {/** hover voor de nav links */}
           
-          <li><Link to="./RestEvent" className="changebtn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Restaurant & Events</Link></li> 
+          <li><Link to="/restevent" className="changebtn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Restaurant & Events</Link></li> 
 
           <a href="#contact">Contact</a>
           {/*<li><Link to="#contact">Contact</Link></li>*/}
@@ -50,14 +49,13 @@ return (
 
 
 
-
 {/* Mobile overlay */}
       <ul className={`nav-links mobile ${open ? "open" : ""}`}>
-        <li><Link to="./home" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Home</Link></li>
+        <li><Link to="/home" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Home</Link></li>
 
-        <li><Link to="./Menukaart" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Menu</Link></li>
+        <li><Link to="/menukaart" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Menu</Link></li>
 
-        <li><Link to="./RestEvent" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Restaurant & Events</Link></li>
+        <li><Link to="/restevent" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Restaurant & Events</Link></li>
         
         <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
       </ul>

@@ -13,7 +13,7 @@ const Home = () => {
     return () => {
         document.getElementById("root").classList.remove("home-bg");
     };
-});
+}, []);
 
      {/*} const hash = window.location.hash;
 

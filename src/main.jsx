@@ -9,7 +9,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter basename="/web_model">
     <ScrollManager />
-    
     <App />
     </BrowserRouter>
   </StrictMode>,

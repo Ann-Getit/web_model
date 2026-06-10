@@ -54,7 +54,7 @@
             font-weight: bold;
             /*font-family: "papyrus";*/
             font-family: 'Impallari Type';
-            margin: 40px 0 5px 0;
+            margin: 45px 0 5px 0;
             text-align: center;
         }
 
@@ -62,13 +62,14 @@
             margin-bottom: 15px;
             font-size: 15px;
             font-style: italic;
-            line-height: 1.5;
             text-align: center;
+             line-height: 30px;
         }
 
         .price {
-            margin-bottom: 30px;
+
             text-align: center;
+            font-weight: 700;
         }
 
         .div1 h2 {

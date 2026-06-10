@@ -1,6 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./Nav";
-import Web from "./Web.jsx";
 import Menukaart from "./pages/Menukaart";
 import RestEvent from "./pages/RestEvent";
 import Home from "./pages/Home";
@@ -19,14 +18,13 @@ function App() {
 
     <main className="content">
      <Routes>
-     <Route path="/" element={<Web />} />
-
+      <Route path="/" element={<Navigate to="/home" replace/>} />
      <Route path="/home" element={<Home />} />
      <Route path="/menukaart" element={<Menukaart />} />
      <Route path="/restevent" element={<RestEvent />} />
      </Routes>
     </main>
-
+     {/*<Route path="/" element={<Web />} />*/}
      <Footer />
      </>
   );

@@ -6,7 +6,6 @@ const Footer = () => {
 
 
 
-
     return (
         <>
         <footer className="deeleen" id="contact">
@@ -44,31 +43,31 @@ const Footer = () => {
             <div className="opening-hours">
                 <div className="row">
                     <span>maandag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
                 <div className="row">
                     <span>dinsdag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
                 <div className="row">
                     <span>woensdag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
                  <div className="row">
                     <span>donderdag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
                  <div className="row">
                     <span>vrijdag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
                  <div className="row">
                     <span>zaterdag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
                  <div className="row">
                     <span>zondag</span>
-                    <span>12:00  -  18:00</span>
+                    <span>12:00  -  22:00</span>
                 </div>
         
             </div>
