@@ -142,7 +142,7 @@ button {
 
   .nav-links.mobile { 
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 70%;
     background: rgba(0,0,0,0.855);
