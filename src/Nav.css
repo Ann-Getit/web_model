@@ -143,7 +143,6 @@ button {
   .nav-links.mobile { 
     display: flex;
     position: absolute;
-    right: 0;
     width: 70%;
     background: rgba(0,0,0,0.855);
     flex-direction: column;
@@ -174,6 +173,8 @@ button {
     all: unset;
     font-size: 1.5rem;;
   }
+
+
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a {
     color: white;
@@ -182,6 +183,8 @@ button {
     transition: color 0.3s ease;
     white-space: normal;
   }
+
+
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a:hover {
     color: rgba(255, 255, 255, 0.582);
@@ -189,7 +192,11 @@ button {
 
 
 }
-
+@media (max-width: 499px) {
+.nav-links.mobile { 
+  position: fixed;
+}
+}
 /*
 
   .overlay {
