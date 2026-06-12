@@ -32,7 +32,7 @@ useEffect(() => {
 
 return (
     <>
-  
+  <p>{window.innerWidth}px</p>
 
      <nav ref={navRef} className="nav-container">
 
@@ -75,8 +75,8 @@ return (
 
         <li><Link to="/menukaart" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Menu</Link></li>
 
-        <li><Link to="/restevent" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Restaurant & Events</Link></li>
-        
+        <li><Link to="/restevent" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Restaurant<span>& Events</span></Link></li>
+      
         <button
   onClick={() => {
     document.getElementById("contact")?.scrollIntoView({

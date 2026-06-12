@@ -1,5 +1,3 @@
-
-
 :root {
     /*--nav-height: 85px;  hoogte van navbar */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,8 +15,8 @@
   background-repeat: no-repeat; 
   background-size: 100% 100%;   
   background-attachment: fixed;
-
 }
+
 
 a {
   text-decoration: none;
@@ -166,12 +164,17 @@ button {
     transform: translateX(30%);
 
   }
+
+  .nav-links.mobile span {
+    display: block;
+    line-height: 2rem;
+  }
+
   button {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
     white-space: normal;
-    word-wrap: break-word;
     all: unset;
     font-size: 1.5rem;;
   }
@@ -182,7 +185,6 @@ button {
     text-decoration: none;
     transition: color 0.3s ease;
     white-space: normal;
-    word-wrap: break-word;
   }
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a:hover {
