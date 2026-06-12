@@ -19,7 +19,7 @@
 
 .event-image {
   display: grid;
-  height: 200px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 
 .event-image2 {
   display: grid;
-  height: 200px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@
   display: grid;
   justify-self: end;
   background-color:  rgb(207, 181, 232);
-  width: 60%;
+  width: 55%;
   z-index: 1;
   position: relative;
   line-height: 1.0;
@@ -73,7 +73,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 250px;
   margin-left: 40%;
   z-index: 2;
  transform: translateY(-50px);
