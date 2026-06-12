@@ -30,7 +30,7 @@
 .box1 {
     display: grid;
     background-color: rgb(207, 181, 232);
-    width: 50%;
+    width: 60%;
     z-index: 1;
     position: relative;
     line-height: 1.0;
@@ -55,7 +55,7 @@
   display: grid;
   justify-self: end;
   background-color:  rgb(207, 181, 232);
-  width: 50%;
+  width: 60%;
   z-index: 1;
   position: relative;
   line-height: 1.0;
@@ -64,7 +64,7 @@
     /*;*/
 }
 .derde {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 80px;
 }
