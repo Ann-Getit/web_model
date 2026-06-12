@@ -95,6 +95,21 @@ html {
   /*font-size: 30px;*/
 }
 
+button {
+  background: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+}
+ button:hover {
+    color: rgba(255, 255, 255, 0.582);
+  }
+
 .nav-links.desktop li a:hover {
   color: rgba(255, 255, 255, 0.582);
 }
@@ -151,7 +166,15 @@ html {
     transform: translateX(30%);
 
   }
-
+  button {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    all: unset;
+    font-size: 1.5rem;;
+  }
   /*  alle links voor mobile overlay behalve Work(aparte hover)*/
   .nav-links.mobile li a {
     color: white;

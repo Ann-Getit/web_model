@@ -31,8 +31,9 @@ const Home = () => {
 
 <div className="fotoalbum">
 <div className="foto">
-    <img src="/pics/soups.jpg" alt="1Soups" />
-    <img src="/pics/hoofdgerechten.jpg" alt="3gerecht" />
+    <img src="./pics/soups.jpg" alt="1Soups" />
+    <img src="./pics/hoofdgerechten.jpg" alt="3gerecht" />
+    <img src="./pics/sweets.jpg" alt="3sweets" />
 </div>
 </div>
 

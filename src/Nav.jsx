@@ -28,8 +28,11 @@ useEffect(() => {
 
 
 
+
+
 return (
     <>
+  
 
      <nav ref={navRef} className="nav-container">
 
@@ -45,7 +48,14 @@ return (
           
           <li><Link to="/restevent" className="changebtn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}>Restaurant & Events</Link></li> 
 
-          <a href="#contact">Contact</a>
+        <button onClick={() => {
+            document.getElementById("contact")?.scrollIntoView({
+            behavior: "smooth"
+          });
+           setOpen(false);
+           }}>
+           Contact
+        </button>
           {/*<li><Link to="#contact">Contact</Link></li>*/}
        </ul> {/* in footer.jsx moet ik  <section id="contact"> -----------------*/}
         {/* Hamburger voor mobiel */} 
@@ -67,7 +77,16 @@ return (
 
         <li><Link to="/restevent" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Restaurant & Events</Link></li>
         
-        <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+        <button
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth"
+    });
+    setOpen(false);
+  }}
+>
+  Contact
+</button>
       </ul>
       {/*.   {/* overlay achtergrond bij mobiel */}
       {/* {open && <div className="overlay" onClick={() => setOpen(false)} />}

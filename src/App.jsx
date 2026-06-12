@@ -4,7 +4,7 @@ import Menukaart from "./pages/Menukaart";
 import RestEvent from "./pages/RestEvent";
 import Home from "./pages/Home";
 import Footer from "./Footer";
-import ScrollManager from "./ScrollManager.jsx";
+
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
 
      <Nav />
 
-
     <main className="content">
      <Routes>
       <Route path="/" element={<Navigate to="/home" replace/>} />
@@ -24,7 +23,6 @@ function App() {
      <Route path="/restevent" element={<RestEvent />} />
      </Routes>
     </main>
-     {/*<Route path="/" element={<Web />} />*/}
      <Footer />
      </>
   );

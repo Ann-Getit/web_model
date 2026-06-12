@@ -23,7 +23,7 @@ const RestEvent = () => {
         </div>
         <div
   className="event-image"
-  style={{ backgroundImage: "url('/pics/firstevent.jpg')" }}
+  style={{ backgroundImage: "url('./pics/firstevent.jpg')" }}
 ></div>
 </div>
 
@@ -40,7 +40,7 @@ const RestEvent = () => {
 </div>
 <div
   className="event-image2"
-  style={{ backgroundImage: "url('/pics/secondevent.jpg')" }}
+  style={{ backgroundImage: "url('./pics/secondevent.jpg')" }}
 ></div>
 </div>
 
@@ -58,7 +58,7 @@ const RestEvent = () => {
 </div>
 <div
   className="event-image3"
-  style={{ backgroundImage: "url('/pics/derdeevent.jpg')" }}
+  style={{ backgroundImage: "url('./pics/derdeevent.jpg')" }}
 ></div>
 </div>
         </div>
