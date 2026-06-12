@@ -150,16 +150,17 @@ button {
     width: 70%;
     background: rgba(0,0,0,0.855);
     flex-direction: column;
-    transform: translateX(150%);
+    transform: translateX(150%); /* closed sidebar*/
     transition: transform 0.3s ease; /* even de nav-links.mobile testen tijdens klikken ervan */
     margin: 0;
     gap: 2rem;
     z-index: 9999;
     list-style: none;
+    padding-top: 50px;
   }
 
   .nav-links.mobile.open {
-    transform: translateX(30%);
+    transform: translateX(40%);
 
   }
 
