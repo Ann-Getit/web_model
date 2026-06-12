@@ -1,7 +1,5 @@
 import "./Home.css";
-import soups from "../assets/soups.jpg";
-import hoofdgerechten from "../assets/hoofdgerechten.jpg";
-import sweets from "../assets/sweets.jpg";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -33,9 +31,8 @@ const Home = () => {
 
 <div className="fotoalbum">
 <div className="foto">
-    <img src={soups} alt="gerecht 1" />
-    <img src={hoofdgerechten} alt="gerecht 3" />
-    <img src={sweets} alt="gerecht 2" />
+    <img src="/pics/soups.jpg" alt="1Soups" />
+    <img src="/pics/hoofdgerechten.jpg" alt="3gerecht" />
 </div>
 </div>
 

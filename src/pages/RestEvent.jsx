@@ -1,7 +1,5 @@
 import "./RestEvent.css";
-import firstevent from "../assets/firstevent.jpg";
-import firstevent2 from "../assets/secondevent.jpg";
-import firstevent3 from "../assets/derdeevent.jpg";
+
 
 const RestEvent = () => {
 
@@ -25,7 +23,7 @@ const RestEvent = () => {
         </div>
         <div
   className="event-image"
-  style={{ backgroundImage: `url(${firstevent})` }}
+  style={{ backgroundImage: "url('/pics/firstevent.jpg')" }}
 ></div>
 </div>
 
@@ -42,7 +40,7 @@ const RestEvent = () => {
 </div>
 <div
   className="event-image2"
-  style={{ backgroundImage: `url(${firstevent2})` }}
+  style={{ backgroundImage: "url('/pics/secondevent.jpg')" }}
 ></div>
 </div>
 
@@ -60,7 +58,7 @@ const RestEvent = () => {
 </div>
 <div
   className="event-image3"
-  style={{ backgroundImage: `url(${firstevent3})` }}
+  style={{ backgroundImage: "url('/pics/derdeevent.jpg')" }}
 ></div>
 </div>
         </div>
