@@ -195,7 +195,10 @@ button {
 @media (max-width: 499px) {
 .nav-links.mobile { 
   position: fixed;
+   transform: translateX(170%); 
 }
+
+
 }
 /*
 
