@@ -61,7 +61,7 @@ return (
     top: navHeight + "px",
     height: `calc(100vh - ${navHeight}px)`}}>
       
-        <li><Link to="/home" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Home</Link></li>
+        <li><Link to="/home" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Home!</Link></li>
 
         <li><Link to="/menukaart" onClick={() => { setOpen(false); window.scrollTo({top: 0, behavior: "smooth",});}}>Menu</Link></li>
 
