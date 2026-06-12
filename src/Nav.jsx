@@ -32,7 +32,6 @@ useEffect(() => {
 
 return (
     <>
-  <p>{window.innerWidth}px</p>
 
      <nav ref={navRef} className="nav-container">
 
