@@ -55,7 +55,7 @@
   display: grid;
   justify-self: end;
   background-color:  rgb(207, 181, 232);
-  width: 55%;
+  width: 60%;
   z-index: 1;
   position: relative;
   line-height: 1.0;
@@ -63,11 +63,18 @@
 
     /*;*/
 }
+
+@media (max-width: 499px) {
+.box2 {
+transform: translateX(50px);
+}
+}
 .derde {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 80px;
 }
+
 .event-image3 {
 
   background-size: cover;
