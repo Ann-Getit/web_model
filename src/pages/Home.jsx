@@ -60,7 +60,6 @@ const Home = () => {
 <hr />
 </div>
 </div>
-
 </div>
 
 
