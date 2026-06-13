@@ -74,7 +74,7 @@ html {
     align-self: flex-start;
     width: 40%;
     height: 100%;
-    padding: 30px 50px 0 50px;
+    padding: 30px 50px 30px 50px;
     line-height: 1.5;
      border: 1px solid red
 }
@@ -85,7 +85,7 @@ html {
     align-self: flex-end;
     width: 40%;
     height: 100%;
-    padding: 30px 50px 0 50px;
+    padding: 30px 50px 30px 50px;
       line-height: 1.5;
 }
 
