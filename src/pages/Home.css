@@ -73,7 +73,7 @@ html {
     background-color: rgb(250, 151, 151);
     align-self: flex-start;
     width: 40%;
-    height: 350px;
+    height: 100%;
     padding: 30px 50px 0 50px;
     line-height: 1.5;
      border: 1px solid red
@@ -84,7 +84,7 @@ html {
     background-color: rgb(251, 151, 151);
     align-self: flex-end;
     width: 40%;
-    height: 350px;
+    height: 100%;
     padding: 30px 50px 0 50px;
       line-height: 1.5;
 }
